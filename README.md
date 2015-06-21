@@ -78,8 +78,8 @@ confusionMatrix(ptest, testing$classe)
 ```  
   
 ## 6. Final Prediction - Validatiing the dataset 
-The validation dataset which contains 20 test cases is loaded from the CSV.  
-The same process of data filtering and tidying must be performed on the validation data set before predicting the results.    
+The prediction is now applied on the validation dataset which contains 20 test cases 
+It is important to tidy and filtered the validation data set before applying to test cases for predicting the results.  
   
 ```
 ## Reading the  validation data set from file

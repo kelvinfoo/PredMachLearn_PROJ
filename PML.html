@@ -164,7 +164,7 @@ confusionMatrix(ptest, testing$classe)  </code></pre>
 </div>
 <div id="final-prediction---validatiing-the-dataset" class="section level2">
 <h2>6. Final Prediction - Validatiing the dataset</h2>
-<p>The validation dataset which contains 20 test cases is loaded from the CSV.<br />The same process of data filtering and tidying must be performed on the validation data set before predicting the results.</p>
+<p>The prediction is now applied on the validation dataset which contains 20 test cases It is important to tidy and filtered the validation data set before applying to test cases for predicting the results.</p>
 <pre class="r"><code>## Read validation data set from file
 validation &lt;- read.csv(&quot;pml-testing.csv&quot;, header=T)  
   
@@ -178,8 +178,6 @@ validation &lt;- validation[-x]; validation &lt;- validation[-c(1:7)]
 <pre><code>##  [1] B A B A A E D B A A A C B A E E A B B B
 ## Levels: A B C D E</code></pre>
 <hr />
-<p>Velloso, E.; Bulling, A.; Gellersen, H.; Ugulino, W.; Fuks, H. Qualitative Activity Recognition of Weight Lifting Exercises. Proceedings of 4th International Conference in Cooperation with SIGCHI (Augmented Human ’13) . Stuttgart, Germany: ACM SIGCHI, 2013.</p>
-<p><a href="http://groupware.les.inf.puc-rio.br/har#ixzz3Tf8PCS1m">Read more</a></p>
 </div>
 
 
